@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="AngularSearch">
+<head>
+  
+  <title>My AngularJS App</title>
+  <!-- Bootstrap Stylesheet -->
+  <link rel="stylesheet" href="components/css/bootstrap.css">
+  <link rel="stylesheet" href="components/css/bootstrap-theme.css">
+
+  <!-- Vendor JS Files -->
+  <script src="components/js/vendor/jquery-3.0.0.js"></script>
+  <script src="components/js/vendor/angular.js"></script>
+  <script src="components/js/vendor/angular-route.js"></script>
+  <script src="components/js/vendor/angular-resource.js"></script>
+
+  <!-- Application JS Files -->
+  <script src="app.js"></script>
+
+  <!-- Controllers -->
+  <script src="lookup/search.js"></script>
+  <script src="dashboard/details.js"></script>
+
+  <!-- Services -->
+  <script src="accountFactory.js"></script>
+
+  <!-- Directives -->
+  <script src="templates/pageNav.js"></script>
+
+</head>
+<body>
+  <page-nav></page-nav>
+
+  <div ng-view></div>
+
+</body>
+</html>
